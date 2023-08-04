@@ -1,0 +1,60 @@
+body {
+  
+  background: url("https://img.freepik.com/vector-premium/calavera-sombrero-mexicano-estilo-monocromo-vintage-aislado-ilustracion-vectorial_379823-4486.jpg?w=740") no-repeat center center fixed;
+  font-size: 90px;
+  position: absolute;
+  top: 82%;
+  left: 55%;
+  transform: translateX(-25%) translateY(-40%);
+}
+.bigote{
+  width: 180px;
+  height: 180px;
+  top: -350px;
+  left: -350px;
+  border-radius: 50%;
+  position: relative;
+  color: black;
+  box-shadow: 
+    150px 240px 0 0 hsl(0, 0%, 5%),
+    300px 240px 0 0 hsl(0, 0%, 5%);
+}
+
+.bigote::before{
+  content: "";
+  position: absolute;
+  left: 30px;
+  top: 120px;
+  width: 210px;
+  height: 120px;
+  border-bottom: solid 180px;
+  color: hsl(0, 0%, 5%);
+  border-radius: 0 0 0 100%;
+  transform: rotate(-40deg);
+  transform-origin: right 210px;
+  }
+
+.bigote::after{
+  content: "";
+  position: absolute;
+  left: 390px;
+  top: 120px;
+  width: 210px;
+  height: 120px;
+  border-bottom: solid 180px;
+  color: hsl(0, 0%, 5%);
+  border-radius: 0 0 100% 0;
+  transform: rotate(40deg);
+  transform-origin:  left 210px;
+}
+
+.texto {
+  position: absolute;
+  top: -450px;
+  left: 180%;
+  transform: translateX(-130%);
+  color: darkred;
+  font-size: 70px;
+  font-weight: bold;
+  white-space: nowrap;
+}
